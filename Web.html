@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Coconut Oil Products</title>
+
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #27ae60;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: #27ae60;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        #products {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-item h3 {
+            font-family: 'Merriweather', serif;
+            margin: 15px 0 10px;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .product-item p {
+            font-family: 'Poppins', sans-serif;
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        footer p {
+            font-size: 0.9em;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Coconut Bliss</h1>
+        <p>Discover the natural benefits of organic coconut oil</p>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Pure Organic Coconut Oil">
+                    <h3>Pure Organic Coconut Oil</h3>
+                    <p>$15.99</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Cold-Pressed Coconut Oil">
+                    <h3>Cold-Pressed Coconut Oil</h3>
+                    <p>$12.99</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Extra Virgin Coconut Oil">
+                    <h3>Extra Virgin Coconut Oil</h3>
+                    <p>$18.99</p>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Coconut Oil Hair Treatment">
+                    <h3>Coconut Oil Hair Treatment</h3>
+                    <p>$20.99</p>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Coconut Oil Skin Care">
+                    <h3>Coconut Oil Skin Care</h3>
+                    <p>$14.99</p>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/200" alt="Organic Coconut Oil Capsules">
+                    <h3>Organic Coconut Oil Capsules</h3>
+                    <p>$22.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coconut Bliss - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
